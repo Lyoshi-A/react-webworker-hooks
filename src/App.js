@@ -72,7 +72,7 @@ const App = props => {
         });
     }
 
-    return <div className=".appContainer">
+    return <div className="appContainer">
                 <div className="appNav">
                     <div className="navBlock">
                         <div className="alert alert-success" role="alert">Sort comments with WebWorker</div>

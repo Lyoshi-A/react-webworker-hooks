@@ -5,7 +5,7 @@
 .appContainer {
    display: grid;
    grid-row-gap: 10px;
-   grid-auto-rows: 100%;
+   background-color: #ddd;
 }
 
 .appNav {
@@ -24,13 +24,13 @@
     align-items: baseline;
 }
 .marginTop {
-    margin-top: 50px;
+    /*margin-top: 50px;*/
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
-    margin-right: 50px;
-    margin-left: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
     text-align: center;
 }
 
@@ -43,13 +43,13 @@
 }
 
 .bouncy-ball {
-    background: #68b9ff;
+    /*background: #68b9ff;*/
     border-radius: 50%;
     position: fixed;
-    top: 5%;
+    top: 6.8vh;
     left: 0;
-    width: 80px;
-    height: 80px;
+    /*width: 80px;*/
+    /*height: 80px;*/
     -ms-animation: bounce 3s infinite;
     -moz-animation: bounce 3s infinite;
     -webkit-animation: bounce 3s infinite;
@@ -62,7 +62,7 @@
         left: 0;
     }
     50% {
-        left: calc(100% - 80px)
+        left: calc(100% - 20px)
     }
     100% {
         left: 0;
@@ -74,7 +74,7 @@
         left: 0;
     }
     50% {
-        left: calc(100% - 80px)
+        left: calc(100% - 20px)
     }
     100% {
         left: 0;
@@ -86,7 +86,7 @@
         left: 0;
     }
     50% {
-        left: calc(100% - 80px)
+        left: calc(100% - 20px)
     }
     100% {
         left: 0;
@@ -98,7 +98,7 @@
         left: 0;
     }
     50% {
-        left: calc(100% - 80px)
+        left: calc(100% - 20px)
     }
     100% {
         left: 0;
