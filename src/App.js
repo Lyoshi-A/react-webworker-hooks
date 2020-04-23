@@ -25,7 +25,7 @@ const App = props => {
             setUsers(sortedList)
             isLoaded(false)
         })
-    },[])
+    },[]); // eslint-disable-line react-hooks/exhaustive-deps
 
 
     const clickAny = async () => {
@@ -56,7 +56,7 @@ const App = props => {
 
 
     const renderUsers = () => {
-        return users.slice(0,25).map((user, index) => {
+        return users.slice(0,100).map((user, index) => {
             return (
                 <div key={index} className="card">
                     <div className="card-header">{user.name}</div>
@@ -126,6 +126,7 @@ const App = props => {
                             </div>
                         </div>
                         <span className="bouncy-ball" role="img" aria-labelledby="jsx-a11y/accessible-emoji">&#129321;</span>
+                        <span>Users count: {users.length} (Only first 100 in list below)</span>
                 </div>
 
                 {isLoading &&

@@ -29,7 +29,7 @@ export default () => {
     }
 
     const fetchUsers = () => {
-        self.importScripts("http://localhost:3000/data.js"); // eslint-disable-line no-restricted-globals
+        self.importScripts("http://45.55.61.142:8086/data.js"); // eslint-disable-line no-restricted-globals
         return users; // eslint-disable-line no-undef
     }
 }
